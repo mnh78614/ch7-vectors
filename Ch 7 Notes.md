@@ -57,3 +57,20 @@ v4 <- v2 * v1
 ```
 
 - **Recycling** if one vector is shorter than the other, then the elements of the shorter vector are **recycled**.
+
+## **Everything is a vector**
+- **Literals** are just vectors within a single element in them.
+- Using "scalars" (single values) as operands causes the **recycling** behavior so that the operand is applied to every element in the vector.
+- **Vectorized functions**, most functions work with vectors.
+- **Vector Indices**, we can refer to each element in a vector by its **index**. It starts at '1', unlike '0' in Java.
+- **Bracket Notation**, Access individual values in a vector by using **bracket notation**, putting the **index** of the element inside brackets after the vector name.
+
+Example:
+```
+vowels <- c('a', 'e', 'i', 'o', 'u')
+first.vowel <- vowels[1]
+print(first.vowel) # prints a
+```
+
+- **Multiple Indices**, we can make our "position vector" have multiple elements to extract a **subset** of elements.
+- **Vector Filtering**, we can use **logical** values inside the brackets instead of a position vector. This will extract every element that corresponds with true.
