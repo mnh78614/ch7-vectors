@@ -74,3 +74,42 @@ print(first.vowel) # prints a
 
 - **Multiple Indices**, we can make our "position vector" have multiple elements to extract a **subset** of elements.
 - **Vector Filtering**, we can use **logical** values inside the brackets instead of a position vector. This will extract every element that corresponds with true.
+
+## Lists
+
+- **Lists**, like vectors, are _one dimensional collections_ of values, but with some additional features:
+  - Lists can store elements of different types
+  - List elements can be **tagged** with a variable name
+
+Example:
+
+```
+person <- list(name = 'Ada", salary = 78000, in.union = TRUE)
+```
+
+- **Maps**
+  - Tagging elements in lists cause them to act like _maps_, where one value "maps" or gives directions to another.
+- Accessing Lists: we access individual values in a list by using **dollar notation**. This looks up an element by its tag.
+
+Example:
+```
+person <- list(name = 'Ada", salary = 78000, in.union = TRUE)
+
+person$first.name # person's first.name ('Ada')
+person$salary # person's salary (78000)
+```
+
+- Double - Bracket Notation: we can also access list elements by using **double-bracket notation**, specifying either the numeric index of the element or the tag.
+
+Example:
+```
+person <- list(name = 'Ada", salary = 78000, in.union = TRUE)
+
+person[[first.name]] # person's first.name ('Ada')
+person[[salary]] # person's salary (78000)
+
+person[[1]] # 'Ada'
+person[[4]] # 'TRUE'
+```
+
+## Vectors use single-bracket when accessing, Lists use double-brackets
